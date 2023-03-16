@@ -1,0 +1,26 @@
+# configura.txt
+
+# https://towardsdatascience.com/you-dont-need-sample-data-you-need-python-faker-fa87c2a119a9
+
+	pip install Faker
+
+from faker import Faker
+fake = Faker()
+
+fake.name()
+
+fake.addres()
+fake.text()
+
+# USING FOR-LOOP
+
+for _ in range(3):
+ print('Name', fake.name())
+ print('Address', fake.street_address())
+ print('Job:' fake.job())
+ print('Company', fake.company())
+ print()
+
+
+
+
